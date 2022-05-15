@@ -1,7 +1,5 @@
 from django.db import models
 from home.models.owners import Owners
-
-
 class Properties(models.Model):
     owners = models.ForeignKey(Owners, on_delete=models.CASCADE)
     title = models.CharField(max_length=256, null=True)
